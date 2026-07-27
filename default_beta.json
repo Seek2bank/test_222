@@ -1,0 +1,31 @@
+{
+    "branch_k": 3,
+    "max_rounds": 3,
+    "sig_threshold": 1.02,
+    "full_promotion_threshold": 1.03,
+    "patch_max_lines": 400,
+    "risk_paths": [
+        "tests/",
+        "test/",
+        "benchmarks/",
+        "setup.py",
+        "pyproject.toml",
+        ".git/"
+    ],
+    "eval_fast_repeats": 3,
+    "eval_full_repeats": 6,
+    "stop_no_improvement": 2,
+    "fast_test_timeout_s": 180,
+    "full_test_timeout_s": 600,
+    "full_top_n": 2,
+    "full_tie_ratio": 1.03,
+    "readonly_guard": true,
+    "ralph_history": true,
+    "inject_all_skills": false,
+    "dynamic_routing": false,
+    "use_bandit": false,
+    "bandit_stats_path": null,
+    "disable_skills": false,
+    "isolation": "single",
+    "env_check_cmd": null
+}

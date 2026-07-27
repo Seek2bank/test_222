@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mokopt"
+version = "0.1.0"
+description = "Multi-branch LLM search for repository performance optimization"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+    "docker==7.1.0",
+    "PyYAML==6.0.2",
+]
+
+[project.optional-dependencies]
+swefficiency = ["datasets==4.4.1"]
+dev = [
+    "pytest==8.4.2",
+    "ruff==0.13.3",
+]
+
+[project.scripts]
+mokopt = "mokopt.cli:main"
+
+[tool.setuptools]
+packages = ["mokopt", "mokopt.backends", "mokopt.executor"]
+package-dir = {mokopt = "."}
+
+[tool.setuptools.package-data]
+mokopt = ["default_beta.json", "skills/*.md"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
