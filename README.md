@@ -215,3 +215,72 @@ correctness, best branch, patch path, trajectory path, token counts, and cost.
 - `--env-check-cmd` can reject package-environment mutations.
 - Tests run before both FAST and FULL promotion.
 - A run with no verified improvement emits an empty patch and speedup `1.0`.
+
+## Distill split
+
+```text
+Distill split: 60% of Formulacode-F (461 -> 276 tasks)
+
+Repository                           Total  Selected  Rate(%)
+xdslproject/xdsl                       136        91     66.9
+networkx/networkx                       35        25     71.4
+optuna/optuna                           28        14     50.0
+pytroll/satpy                           18         9     50.0
+dwavesystems/dimod                      15         8     53.3
+Qiskit/qiskit                           13         6     46.2
+pydata/bottleneck                       12         6     50.0
+sgkit-dev/sgkit                         12         6     50.0
+UXARRAY/uxarray                         11         6     54.5
+sourmash-bio/sourmash                   11         7     63.6
+JDASoftwareGroup/kartothek              10         5     50.0
+datalad/datalad                         10         6     60.0
+Textualize/rich                          9         5     55.6
+pysal/momepy                             9         5     55.6
+microsoft/Qcodes                         7         1     14.3
+pygeos/pygeos                            7         4     57.1
+geopandas/geopandas                      6         4     66.7
+pyapp-kit/psygnal                        6         3     50.0
+shapely/shapely                          6         5     83.3
+DASDAE/dascore                           5         2     40.0
+deepchecks/deepchecks                    5         4     80.0
+pvlib/pvlib-python                       5         1     20.0
+xarray-contrib/flox                      5         2     40.0
+ActivitySim/activitysim                  4         3     75.0
+SciTools/cartopy                         4         3     75.0
+holgern/beem                             4         4    100.0
+lmfit/lmfit-py                           4         3     75.0
+mars-project/mars                        4         2     50.0
+mie-lab/trackintel                       4         2     50.0
+napari/napari                            4         3     75.0
+sunpy/sunpy                              4         2     50.0
+TileDB-Inc/TileDB-Py                     3         3    100.0
+dipy/dipy                                3         2     66.7
+kedro-org/kedro                          3         3    100.0
+pymc-devs/pymc                           3         1     33.3
+python-adaptive/adaptive                 3         2     66.7
+NCAR/geocat-comp                         2         2    100.0
+dedupeio/dedupe                          2         1     50.0
+django-components/django-components      2         2    100.0
+dottxt-ai/outlines-core                  2         1     50.0
+glotzerlab/signac                        2         2    100.0
+h5py/h5py                                2         1     50.0
+holoviz/param                            2         0      0.0
+innobi/pantab                            2         0      0.0
+numpy/numpy-financial                    2         1     50.0
+scikit-learn/scikit-learn                2         0      0.0
+HIPS/autograd                            1         0      0.0
+Quansight-Labs/ndindex                   1         1    100.0
+arviz-devs/arviz                         1         0      0.0
+danielgtaylor/python-betterproto         1         1    100.0
+devitocodes/devito                       1         1    100.0
+makepath/xarray-spatial                  1         1    100.0
+not522/ac-library-python                 1         0      0.0
+pybop-team/PyBOP                         1         1    100.0
+stac-utils/pystac                        1         0      0.0
+tqdm/tqdm                                1         1    100.0
+wmayner/pyphi                            1         1    100.0
+xarray-contrib/xbatcher                  1         0      0.0
+xitorch/xitorch                          1         1    100.0
+
+TOTAL                                  461       276     59.9
+```
